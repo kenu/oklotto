@@ -32,7 +32,7 @@ public class LottoController {
     // 예를 들어, 로또 번호를 파싱하고 엔티티를 생성한 후 리포지토리를 통해 저장합니다.
     System.out.println(lotto);
     LottoRow row = lotto.getRecord();
-    lottoNumberRepository.save(row );
+    lottoNumberRepository.save(row);
 
     return "Lotto numbers fetched and saved.";
   }
